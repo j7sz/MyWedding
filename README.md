@@ -31,7 +31,11 @@ With no email address configured, the form explicitly saves a draft **only in th
 
 ## Hosting
 
-The complete public website is in `dist/`. Upload its contents to any static host. For GitHub Pages, publish that directory with a Pages deployment workflow when ready. No deployment or automated publication is configured by this initial project.
+The website is published at https://j7sz.github.io/MyWedding/ using GitHub Pages.
+
+The workflow in `.github/workflows/pages.yml` publishes only `dist/`. Pushing changes to `dist/` on `main` automatically checks the JavaScript and deploys the website. You can also run **Publish wedding invitation** manually from the repository's Actions tab.
+
+In repository **Settings → Pages**, the publishing source must be **GitHub Actions**. No hosting secrets or dependencies are required. Deployment progress is available under **Actions**; a successful run updates the live website.
 
 ## Checks
 
