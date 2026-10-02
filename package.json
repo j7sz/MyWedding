@@ -1,0 +1,10 @@
+{
+  "name": "my-wedding",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A red and ivory bilingual wedding invitation",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/config.js"
+  }
+}

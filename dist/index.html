@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#831e29">
+  <meta name="description" content="Together with our families, we invite you to celebrate our wedding.">
+  <title>Our Wedding · 囍</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23831e29'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' fill='%23f8edda'%3E囍%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#invitation">Skip to invitation</a>
+  <div class="preview-note" id="preview-note">A little preview of our big day · Sample details &amp; photo placeholders</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Wedding invitation home">囍 <span>THE WEDDING</span></a>
+    <nav aria-label="Invitation"><a href="#celebration">The day</a><a href="#moments">Our moments</a><a class="nav-rsvp" href="#rsvp">RSVP</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">WITH OUR FAMILIES · 敬邀</p>
+        <p class="chinese-intro" lang="zh">良辰吉日 · 喜结良缘</p>
+        <h1 id="hero-title"><span data-bind="partnerOne">Your name</span><i>&amp;</i><span data-bind="partnerTwo">Your love</span></h1>
+        <div class="hero-rule"></div>
+        <p class="hero-invitation">A day for love.<br>A lifetime together.</p>
+        <p class="hero-date" data-date="short">24 JANUARY 2027 · SUNDAY</p>
+        <a class="button" href="#invitation">Open our invitation <span aria-hidden="true">囍</span></a>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame" data-photo="cover">
+          <div class="photo-placeholder cover-placeholder"><span class="vertical-type" lang="zh">执子之手 · 与子偕老</span><span class="double-happiness" lang="zh">囍</span><span class="placeholder-label">YOUR WEDDING PORTRAIT</span></div>
+        </div>
+        <span class="portrait-caption">THE BEGINNING OF OUR FOREVER</span>
+        <div class="date-stamp"><span data-date="month">JAN</span><strong data-date="day">24</strong><span data-date="year">2027</span></div>
+      </div>
+      <div class="hero-foot"><span>A CELEBRATION OF TWO FAMILIES</span><span lang="zh">两姓联姻 · 一堂缔约</span></div>
+    </section>
+
+    <section class="invitation section-pad" id="invitation" aria-labelledby="invitation-title">
+      <span class="section-number">01 / THE INVITATION</span>
+      <p class="small-seal" aria-hidden="true">囍</p>
+      <h2 id="invitation-title" lang="zh">我们结婚啦</h2>
+      <p class="serif-subtitle">And we would love for you to be there.</p>
+      <p class="invitation-text">Together with our families, we invite you to share in the joy<br class="desktop-break"> of our wedding. Come for the celebration, stay for the memories.</p>
+      <p class="chinese-copy" lang="zh">您的到来，就是我们最好的祝福。<br>一起见证幸福，吃好喝好！</p>
+      <div class="couple-names"><span data-bind="partnerOne">Your name</span><span class="couple-symbol" aria-hidden="true">囍</span><span data-bind="partnerTwo">Your love</span></div>
+      <div class="countdown-wrap"><p class="eyebrow" id="countdown-label">COUNTING DOWN TO OUR FOREVER</p><div class="countdown" id="countdown" role="group" aria-labelledby="countdown-label"><div><strong id="days">—</strong><span>DAYS</span></div><b>:</b><div><strong id="hours">—</strong><span>HOURS</span></div><b>:</b><div><strong id="minutes">—</strong><span>MINUTES</span></div><b>:</b><div><strong id="seconds">—</strong><span>SECONDS</span></div></div></div>
+    </section>
+
+    <section class="moments section-pad" id="moments" aria-labelledby="moments-title">
+      <div class="section-heading"><div><span class="section-number">02 / OUR MOMENTS</span><h2 id="moments-title">From me &amp; you,<br>to <em>us.</em></h2></div><p lang="zh">所有不期而遇的温柔<br>最终都汇聚成<br>「我和我们」</p></div>
+      <div class="photo-grid"><figure class="moment moment-large"><div class="photo-slot" data-photo="together"><div class="photo-placeholder"><span class="photo-index">01</span><span class="photo-word">Together.</span><span class="placeholder-label">YOUR FAVOURITE PHOTO TOGETHER</span></div></div><figcaption>A little moment. A whole lot of love.</figcaption></figure><figure class="moment moment-small"><div class="photo-slot" data-photo="moment"><div class="photo-placeholder pale-placeholder"><span class="photo-index">02</span><span class="photo-word">Always.</span><span class="placeholder-label">ANOTHER MEMORY YOU LOVE</span></div></div><figcaption lang="zh">四季更迭，爱意不减。</figcaption></figure></div>
+    </section>
+
+    <section class="celebration section-pad" id="celebration" aria-labelledby="celebration-title">
+      <div class="event-copy"><span class="section-number">03 / SAVE THE DATE</span><h2 id="celebration-title">A day to<br><em>remember.</em></h2><p class="event-date" data-date="long">Sunday, 24 January 2027</p><dl><div><dt>WHEN · 时间</dt><dd id="event-time">6:00 PM</dd></div><div><dt>WHERE · 地点</dt><dd data-bind="venue">Your wedding venue</dd><dd class="venue-address" data-bind="address">Venue address to come</dd></div></dl><div class="event-actions"><button class="button button-light" id="calendar-download" type="button">Add to calendar</button><a class="text-link" id="map-link" hidden target="_blank" rel="noopener noreferrer">View location</a></div></div>
+      <div class="calendar-card"><div class="calendar-heading"><span id="calendar-month">January</span><span data-date="year">2027</span></div><p class="calendar-chinese" lang="zh">好日子 · 宜嫁娶</p><table class="calendar" aria-label="Wedding month"><thead><tr><th scope="col">M</th><th scope="col">T</th><th scope="col">W</th><th scope="col">T</th><th scope="col">F</th><th scope="col">S</th><th scope="col">S</th></tr></thead><tbody id="calendar-body"></tbody></table><p class="calendar-foot">A date to keep close to your heart.</p></div>
+    </section>
+
+    <section class="rsvp section-pad" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="rsvp-copy"><span class="section-number">04 / YOU'RE INVITED</span><h2 id="rsvp-title">A seat at<br>our <em>celebration.</em></h2><p>We hope you can join us.<br>Let us know who will be celebrating with you.</p><p class="chinese-copy" lang="zh">以爱之名，邀您共赴。</p></div>
+      <form id="rsvp-form"><div class="form-row"><label for="guest-name">Your name <span aria-hidden="true">*</span></label><input id="guest-name" name="name" autocomplete="name" placeholder="Name & surname" maxlength="100" required></div><fieldset><legend>Will you be joining us?</legend><div class="attendance-options"><label><input type="radio" name="attendance" value="yes" checked> Joyfully accepts</label><label><input type="radio" name="attendance" value="no"> Regretfully declines</label></div></fieldset><div class="form-row" id="guest-count-row"><label for="guest-count">Number of guests, including you</label><select id="guest-count" name="guests"><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></div><div class="form-row"><label for="guest-message">A little note <span class="optional">(optional)</span></label><textarea id="guest-message" name="message" rows="3" maxlength="1000" placeholder="A wish for the newlyweds, or a dietary request…"></textarea></div><p class="form-note" id="form-note">Preview mode: your reply is saved only on this device. It is not sent to the couple.</p><button class="button" id="rsvp-submit" type="submit">Save RSVP draft <span aria-hidden="true">囍</span></button><p class="form-status" id="form-status" role="status"></p></form>
+    </section>
+  </main>
+  <footer><span class="footer-seal" aria-hidden="true">囍</span><p><span data-bind="partnerOne">Your name</span> &amp; <span data-bind="partnerTwo">Your love</span></p><span class="eyebrow">WITH LOVE, ALWAYS · 来日方长</span></footer>
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music" aria-pressed="false" hidden>♫</button><audio id="wedding-music" loop preload="none"></audio>
+</body>
+</html>
